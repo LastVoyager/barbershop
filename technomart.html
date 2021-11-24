@@ -44,71 +44,60 @@
                 </ul>
             </section>
         </header>
-        <main>
+        <main class="container">
             <section class="propositions">
                 <ul class="list-propositions">
                     <li catalog="items">
-                        <a href="items.html">
-                            <h3>
-                                <span class="catalog-category">Материалы</span>
-                            </h3>
-                            <p>
-                                <a class="button" href="items.html">на любой вкус</a>
-                            </p>
-                        </a>
+                        <h3>
+                            <span class="catalog-category">Материалы</span>
+                        </h3>
+                        <p>
+                            <a class="button" href="items.html">на любой вкус</a>
+                        </p>
                     </li>
                     <li catalog="tools">
-                        <a href="tools.html">
-                            <h3>
-                                <span class="catalog-category">Инструменты</span>
-                            </h3>
-                            <p>
-                                <a class="button" href="tools.html">на все случаи</a>
-                            </p>
-                        </a>
+                        <h3>
+                            <span class="catalog-category">Инструменты</span>
+                        </h3>
+                        <p>
+                            <a class="button" href="tools.html">на все случаи</a>
+                        </p>
                     </li>
                     <li catalog="techincs">
-                        <a href="techincs.html">
-                            <h3>
-                                <span class="catalog-category">Техника</span>
-                            </h3>
-                            <p>
-                                <a class="button" href="techincs.html">для стройки</a>
-                            </p>
-                        </a>
+                        <h3>
+                            <span class="catalog-category">Техника</span>
+                        </h3>
+                        <p>
+                            <a class="button" href="techincs.html">для стройки</a>
+                        </p>
                     </li>
                     <li catalog="discounts">
-                        <a href="discounts.html">
-                            <h3>
-                                <span class="catalog-category">Скидки 50%</span>
-                            </h3>
-                            <p>
-                                <a class="button" href="discounts.html">на 350 товаров</a>
-                            </p>
-                        </a>
+                        <h3>
+                            <span class="catalog-category">Скидки 50%</span>
+                        </h3>
+                        <p>
+                            <a class="button" href="discounts.html">на 350 товаров</a>
+                        </p>
                     </li>
                     <li catalog="delivery">
-                        <a href="delivery.html">
-                            <h3>
-                                <span class="catalog-category">Доставка</span>
-                            </h3>
-                            <p>
-                                <a class="button" href="delivery.html">БЕСПЛАТНО</a>
-                            </p>
-                        </a>
+                        <h3>
+                            <span class="catalog-category">Доставка</span>
+                        </h3>
+                        <p>
+                            <a class="button" href="delivery.html">БЕСПЛАТНО</a>
+                        </p>
                     </li>
-                    <li catalog="current-tool">
-                        <a href="tools.html"><img src="img/perforator.jpg" width="" height="" 
-                            alt="perforator»">
-                            <h1>
-                                <span class="tool-name">ПЕРФОРАТОРЫ</span>
-                            </h1>
-                            <P>настоящие мужские</P>
-                            <p>
-                                <a class="button" href="tools.html">ОТКРЫТЬ КАТАЛОГ</a>
-                            </p>
-                        </a>
-                    </li>
+                    <section catalog="current-tool">
+                        <h1>
+                            <span class="tool-name">ПЕРФОРАТОРЫ</span>
+                        </h1>
+                        <P>настоящие мужские</P>
+                        <p>
+                            <a class="button" href="tools.html">ОТКРЫТЬ КАТАЛОГ</a>
+                            <input type="radio" name="photo1">
+                            <input type="radio" name="photo1">
+                        </p>
+                    </section>
                 </ul>
             </section>
             <section class="populars">
@@ -119,25 +108,29 @@
                     </form>
                     <ul class="list-populars-goods">
                         <li>
-                            <a href="drill-1.html"><img src="img/drill-1.jpg" width="" height="" 
-                                alt="drill-1">
-                            <p catalog="catalog-item-price">
-                                <b>2 900 ?</b>
-                                <a class="button" href="#">Купить</a>
+                            <a href="drill-bosch-1.html"><img src="img/drill-bosch-1.jpg" width="" height="" 
+                                alt="drill-bosch-1"></a>
+                            <p catalog="item-price"><b></b>Перфоратор BOSCH<br>BFG 9000<br></b>
+                                <s>32500 p.</s><br>
                             </p>
+                            <form>
+                                <a class="button" href="#">25500 p.</a>
+                            </form>
                         </li>
                         <li>
-                            <a href="drill-1.html"><img src="img/drill-1.jpg" width="" height="" 
-                                alt="drill-1">
-                            <p catalog="catalog-item-price">
-                                <b>2 900 ?</b>
-                                <a class="button" href="#">Купить</a>
+                            <a href="perforator-arny.html"><img src="img/perforator-arny.jpg" width="" height="" 
+                                alt="perforator ARNOLD"></a>
+                            <p catalog="item-price"><b></b>Перфоратор ARNOLD<br>T-1000<br></b>
+                               <s>500000 p.</s><br>
                             </p>
+                            <form>
+                                <a class="button" href="#">100 p.</a>
+                            </form>
                         </li>
                          <!--и так далее-->
                     </ul>
                 </div>
-                <div class="populars-producers">
+                <div class="populars-manufacturer">
                     <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
                     <form>
                         <a class="button" href="#">все популярные производители</a>
@@ -186,7 +179,7 @@
                     строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
                     <p>Мы можем доставить ваш товар в самые отдаленные точки планеты!<br>
                     Техномарт работает со многими транспортными компаниями</p>
-                    <ul class="delcompany-list">
+                    <ul class="del.company-list">
                        <li>
                             <p>Деловые линии</p>
                        </li>
