@@ -1,0 +1,39 @@
+/* HEADER */
+.site-navigation a {
+    color:#f3f7f8;
+    font-family: Cuprum;
+}
+.site-navigation {
+    background: #3d546e;
+    font-family: Cuprum;
+}
+section.top-area {
+    background: #3d546e;
+    color: white;
+    font-family: Cuprum;
+}
+/* FOOTER */
+section.first-row {
+    background: #3d546e;
+    color:#f3f7f8;
+    padding: 0; 
+    margin: 0;
+}
+.white a {
+    color:white;
+}
+.yellow a {
+    color:#ffda96;
+}
+section.second-row {
+    background: #33445a;
+    color:#f3f7f8;
+    padding: 0; 
+    margin: 0;
+}
+.feedback a {
+    color:#ffda96;
+}
+.designed a {
+    color:#ffda96;
+}
