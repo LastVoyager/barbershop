@@ -1,23 +1,30 @@
 /* HEADER */
-.site-navigation a {
-    color:#f3f7f8;
-    font-family: Cuprum;
-}
-.site-navigation {
-    background: #3d546e;
-    font-family: Cuprum;
+.top-area a  {
+    position: relative;
+    left: 130px;
 }
 section.top-area {
     background: #3d546e;
     color: white;
-    font-family: Cuprum;
+    font-family: "Cuprum",regular;
+}
+.header {
+    position: relative;
+    left: 350px;
+}
+.site-navigation a {
+    color:#f3f7f8;
+    font-family: "Cuprum",regular;
+}
+.site-navigation {
+    background: #3d546e;
+    font-family: "Cuprum",regular;
+    font-size: 17px;
 }
 /* FOOTER */
 section.first-row {
     background: #3d546e;
     color:#f3f7f8;
-    padding: 0; 
-    margin: 0;
 }
 .white a {
     color:white;
