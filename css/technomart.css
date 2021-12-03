@@ -1,26 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Cuprum", Regular;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+header {
+background-color: #f3f7f9;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* HEADER */
-.top-area a  {
-    position: relative;
-    left: 130px;
-}
-section.top-area {
-    background: #3d546e;
-    color: white;
-    font-family: "Cuprum",regular;
-}
+
 .header {
     position: relative;
     left: 350px;
+    
+}
+.search {
+    font: inherit;
+    
+    color: #ffffff;
+    background-color: #3d546e;
+    border: none;
+}
+
+.bookmark {
+    font: inherit;
+
+    color: #ffffff;
+}
+.cart {
+    font: inherit;
+
+    color: #ffffff;
+}
+
+button {
+    font: inherit;
+
+    color: #000000;
+    background-color:#ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.search-div {
+    color: #ffffff;
+}
+.button-green {
+    font: inherit;
+
+    color: #ffffff;
+    
+    text-align: center;
+    vertical-align: middle;
+    background-color: #63a63e;
+
+    margin-left: 100px;
+}
+
+.button-green-empty {
+    font: inherit;
+
+    color: #32425c;
+    text-align: center;
+    vertical-align: middle;
+    border-color: #63a63e;
+    margin-left: 15px;
+
+    
+}
+.button-green-empty:hover,
+.button-green-empty:focus {
+    border-color: #32425c;
+
+}
+.button-green-empty:active {
+
+}
+
+.button-client a {
+    color: #000000;
+
+    font: inherit;
+    font-size: 21px;
+    line-height: 18px;
+
+    border:none;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+
+section.top-area {
+    background: #3d546e;
+    color: white;
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.text-cite-about{
+    color: #ff5357;
+    font: "Cuprum";
+    font-style: Italic;
+}
+.phone-number {
+    color: #3d546e;
+    font: "Cuprum";
+    font-style: Regular;
+}
+.phone-number a {
+    font: inherit;
+
+    font-size: 21px;
+    line-height: 18px;
+    color: #ff5357;
+    border: 3px solid #ffffff;
+}
+.phone-number object {
+    text-align: center;
+    vertical-align: middle;
 }
 .site-navigation a {
     color:#f3f7f8;
-    font-family: "Cuprum",regular;
+    font-family: inherit;
 }
 .site-navigation {
+    list-style: none;
     background: #3d546e;
-    font-family: "Cuprum",regular;
+    font-family: inherit;
     font-size: 17px;
 }
+
 /* FOOTER */
 section.first-row {
     background: #3d546e;

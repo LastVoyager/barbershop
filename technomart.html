@@ -3,21 +3,34 @@
     <head>
         <meta charset="utf-8">
         <title>technomart</title>
-        <link rel="stylesheet" href="css/technomart.css">  
+        <link rel="stylesheet" href="css/technomart.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:wght@700&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="../css/normalize.css">
     </head>
     <body>
         <header class="main-header">
             <section class="top-area">
                 <a class="main-header-logo" href=technomart.html> 
-                <img scr="images/img/logo-backgrnd.png" width="221" heigth="48"
-                alt="логотип техномарта">
+                <object data="C:\Users\Max\barbershop/img/images/main-logo.png" width="220" heigth="47" class="main-logo"
+                alt="Техномарт"></object>
                 </a>
                 <form class="header">
-                    <button type="submit"><i class="search"></i></button>
-                    <input type="text" name="text" class="search" placeholder="Поиск">
-                    <a class="add_fav" rel="sidebar" href="" onclick="return bookmark(this);">Закладки</a>
-                    <a href="#" title="Buy Shopping card"><b>&#43;</b><img width="16" height="10" alt="Cart" src="images/cart.png"></a>
-                    <a class="button" href="makeorder.html">Оформить заказ</a>
+                    <div class="search-div">
+                        <button class="search"><object data="C:\Users\Max\barbershop/img/svg/icon-search.svg" width="17px" heigth="17px" class="icon-search"
+                        type="image/svg+xml" alt="Поиск"></object></button>
+                        <input type="text" name="text" class="search" placeholder="Поиск:">
+                    </div>
+                    <div class="bookmark-div">
+                        <a class="bookmark" rel="sidebar" href="" onclick="return bookmark(this);">
+                        <object data="C:\Users\Max\barbershop/img/svg/icon-bookmark.svg" width="14px" heigth="16px" class="icon-bookmark"
+                        type="image/svg+xml"></object>Закладки</a>
+                    </div>
+                    <div class="cart-div">
+                        <a class="cart" href="#" title="Buy Shopping card">
+                        <object data="C:\Users\Max\barbershop/img/svg/icon-cart.svg" width="15px" heigth="15px" class="icon-cart"
+                        type="image/svg+xml"></object>Корзина</a>
+                    </div>
+                    <a class="button-green" href="makeorder.html">Оформить Заказ</a>
                 </form>
             </section>
             <section class="middle-area">
@@ -25,14 +38,17 @@
                     <p class="text-cite-about">Интернет-магазин<br>строительный материалов<br>и инструментов для ремонта<br></p>
                 </div>
                 <div class="phone-number">
-                    <a class="button"><img src="img/call-icon.jpg" width="" heigth=""></a>
-                    <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+                    <a class="button" href="tel:+7 (812) 555-05-55">
+                        <object data="C:\Users\Max\barbershop/img/svg/icon-phone.svg" width="20px" heigth="20px" class="icon-phone"
+                        type="image/svg+xml"></object>+7 (812) 555-05-55
+                    </a>
                     <p>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/18</p>
                 </div>
                 <div>
-                    <form>
-                        <button><img src="images/enter.png"> Кнопка ВХОД</button>
-                        <button><img src="images/register.png"> Кнопка Регистрация</button>
+                    <form class="button-client">
+                        <a class="button" href="#"><object data="C:\Users\Max\barbershop/img/svg/icon-login.svg" width="20px" heigth="17px" class="icon-login"
+                        type="image/svg+xml"></object>ВХОД</a>
+                        <a class="button" href="#">Регистрация</a>
                     </form>
                 </div>
             </section>
@@ -140,6 +156,12 @@
                             <form>
                                 <button>100 p.</button>
                             </form>
+                            <p>
+                                <form class="button-buy">
+                                    <a class="button-green" href="#">КУПИТЬ</a>
+                                    <button class="button-green-empty">В ЗАКЛАДКИ</button>
+                                </form>
+                            </p>
                         </li>
                          <!--и так далее-->
                     </ul>
