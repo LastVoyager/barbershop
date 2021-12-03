@@ -14,20 +14,45 @@ body {
 }
 
 header {
-background-color: #f3f7f9;
+    background-color: #f3f7f8;
+    height: 320px;
+    width: 1200px;
 }
 
 a {
     text-decoration: none;
 }
 
+button {
+    font: inherit;
+
+    margin: 0;
+    padding: 0;
+
+    color: #000000;
+    background-color:#ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+
 /* HEADER */
 
-.header {
-    position: relative;
-    left: 350px;
+
+.top-area {
+    font: inherit;
     
+    background: #3d546e;
+    font-size: 17px;
+    line-height: 18px;
+
+    height: 42px;
+    width: 1200px  
 }
+.header {
+    margin-left: 400px;
+    margin-top: 40px;
+}
+
 .search {
     font: inherit;
     
@@ -38,26 +63,29 @@ a {
 
 .bookmark {
     font: inherit;
-
     color: #ffffff;
 }
+
 .cart {
     font: inherit;
-
     color: #ffffff;
 }
-
-button {
-    font: inherit;
-
-    color: #000000;
-    background-color:#ffffff;
-    text-align: center;
-    vertical-align: middle;
+.main-logo {
+    display:inline-block;
+    margin-left: 130px;
 }
-
-.search-div {
-    color: #ffffff;
+.search-div{
+    display:inline-block;
+    margin-right:65px;
+    
+}
+.bookmark-div {
+    display:inline-block;
+    margin-right:65px;
+}
+.cart-div {
+    display:inline-block;
+    margin-right:65px;
 }
 .button-green {
     font: inherit;
@@ -67,8 +95,9 @@ button {
     text-align: center;
     vertical-align: middle;
     background-color: #63a63e;
+    
 
-    margin-left: 100px;
+    display:inline-block;
 }
 
 .button-green-empty {
@@ -77,18 +106,14 @@ button {
     color: #32425c;
     text-align: center;
     vertical-align: middle;
-    border-color: #63a63e;
+    border-color:  #63a63e;
     margin-left: 15px;
-
-    
+    border-style: solid; 
 }
+
 .button-green-empty:hover,
 .button-green-empty:focus {
     border-color: #32425c;
-
-}
-.button-green-empty:active {
-
 }
 
 .button-client a {
@@ -103,15 +128,8 @@ button {
     text-align: center;
     vertical-align: middle;
 
-}
-
-
-section.top-area {
-    background: #3d546e;
-    color: white;
-    font-family: inherit;
-    font-size: 17px;
-    line-height: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 .text-cite-about{
@@ -137,14 +155,51 @@ section.top-area {
     vertical-align: middle;
 }
 .site-navigation a {
+    font-family: "Cuprum";
+    font-style: regular;
+
     color:#f3f7f8;
-    font-family: inherit;
+    font-size: 17px;
+    line-height: 17px;
+    
 }
 .site-navigation {
     list-style: none;
-    background: #3d546e;
-    font-family: inherit;
-    font-size: 17px;
+    background: #3d546e; 
+    box-shadow: 0px 5px 0px 0px #33445a; 
+    margin-left: 130px;
+    position: absolute;
+    height: 60px;
+    width: 940px
+}
+.nav-1 {
+    display:inline-block;
+    margin-right:65px;
+    margin-top: 20px;
+}
+.nav-2 {
+    display:inline-block;
+    margin-right:60px;
+}
+.nav-3 {
+    display:inline-block;
+    margin-right:60px;
+}
+.nav-4 {
+    display:inline-block;
+    margin-right:60px;
+}
+.nav-5 {
+    display:inline-block;
+    margin-right:60px;
+}
+.nav-6 {
+    display:inline-block;
+    margin-right:60px;
+}
+.nav-7 {
+    display:inline-block;
+  
 }
 
 /* FOOTER */
