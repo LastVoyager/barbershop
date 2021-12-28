@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     
-    font-family: "Cuprum", Regular;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
@@ -23,41 +23,64 @@ a {
     text-decoration: none;
 }
 
-button {
-    font: inherit;
 
-    margin: 0;
-    padding: 0;
 
-    color: #000000;
-    background-color:#ffffff;
-    text-align: center;
-    vertical-align: middle;
-}
 
 /* HEADER */
 
+.logo-div a {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 24px;
+    
+}
+.logo-div:hover {
+    background-color: #ca2c37;
+    box-shadow: 0px 5px 0px 0px #9a212a; 
+}
 
+.logo-div:active {
+    background-color: #ba2732;
+    box-shadow: 0px 5px 0px 0px #8e1e26; 
+}
+.logo-div {
+    font: inherit;
+    
+    text-align: center;
+    vertical-align: middle;
+    
+    background-color: #ff5357;
+    box-shadow: 0px 5px 0px 0px #c23f42; 
+    margin-left: 130px;
+    
+    height: 42px;
+    width: 220px;
+}
 .top-area {
     font: inherit;
     
-    background: #3d546e;
+    background: #293449;
     font-size: 17px;
     line-height: 18px;
 
     height: 42px;
     width: 1200px  
 }
+
 .header {
     margin-left: 400px;
     margin-top: 40px;
+}
+
+.header a:active {
+    color: #aac39b;
 }
 
 .search {
     font: inherit;
     
     color: #ffffff;
-    background-color: #3d546e;
+    background-color: #293449;
     border: none;
 }
 
@@ -66,38 +89,53 @@ button {
     color: #ffffff;
 }
 
+.bookmark:active {
+    color: #999ca1;
+}
+
 .cart {
     font: inherit;
     color: #ffffff;
 }
-.main-logo {
-    display:inline-block;
-    margin-left: 130px;
-}
+
 .search-div{
     display:inline-block;
     margin-right:65px;
     
 }
+
 .bookmark-div {
     display:inline-block;
-    margin-right:65px;
+    margin-right:65px; 
 }
+    
 .cart-div {
     display:inline-block;
     margin-right:65px;
 }
+    /* B U T T O N S */
+
 .button-green {
     font: inherit;
 
     color: #ffffff;
+    text-transform: none;
     
     text-align: center;
-    vertical-align: middle;
-    background-color: #63a63e;
     
-
-    display:inline-block;
+    
+    background-color: #63a63e;
+    width: 150px;
+    height: 42px;
+    display: inline-block;
+    
+    
+}
+.button-green:hover {
+    background-color:#5fbb2d;
+}
+.button-green:active {
+    background-color:#518534;
 }
 
 .button-green-empty {
@@ -105,15 +143,20 @@ button {
 
     color: #32425c;
     text-align: center;
-    vertical-align: middle;
+    
     border-color:  #63a63e;
+    width: 150px;
+    height: 42px;
     margin-left: 15px;
     border-style: solid; 
 }
 
-.button-green-empty:hover,
-.button-green-empty:focus {
+.button-green-empty:hover {
     border-color: #32425c;
+}
+.button-green-empty:active {
+    border-color: #32425c;
+    opacity:0.3;
 }
 
 .button-client a {
@@ -123,16 +166,27 @@ button {
     font-size: 21px;
     line-height: 18px;
 
-    border:none;
     background-color: #ffffff;
+    
     text-align: center;
     vertical-align: middle;
-
+    
     margin: 0;
     padding: 0;
 }
+.button-client a:hover {
+    color: #ee3643;
+    
+}
+.button-client a:active {
+    color: #000000;
+    opacity:0.3;
+    background-color: #ffffff;
+}
+
 
 .text-cite-about{
+    text-transform: none;
     color: #ff5357;
     font: "Cuprum";
     font-style: Italic;
@@ -165,18 +219,20 @@ button {
 }
 .site-navigation {
     list-style: none;
-    background: #3d546e; 
-    box-shadow: 0px 5px 0px 0px #33445a; 
+    background: #32425c; 
+    box-shadow: 0px 5px 0px 0px #293449; 
     margin-left: 130px;
     position: absolute;
     height: 60px;
     width: 940px
 }
+    
 .nav-1 {
     display:inline-block;
     margin-right:65px;
     margin-top: 20px;
 }
+
 .nav-2 {
     display:inline-block;
     margin-right:60px;
@@ -201,6 +257,40 @@ button {
     display:inline-block;
   
 }
+/* M A I N */
+.img {
+    background-image: url(../img/materials.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.list-propositions h3 {
+    font: inherit;
+    text-transform: none;
+
+    
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.img a {
+    font: inherit;
+    text-transform: none;
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: #dda028;
+    width: 135px;
+    height: 38px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+
 
 /* FOOTER */
 section.first-row {
