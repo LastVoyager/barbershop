@@ -8,58 +8,51 @@
         <link rel="stylesheet" href="../css/normalize.css">
     </head>
     <body>
-        <header class="main-header">
-            <section class="top-area">
-                <div class="logo-div">
-                    <a class="main-header-logo" href=technomart.html>ТЕХНОМАРТ</a>
-                </div>  
-                <form class="header">
-                    <div class="search-div">
-                        <button class="search"><object data="C:\Users\Max\barbershop/img/svg/icon-search.svg" width="17px" heigth="17px" class="icon-search"
-                        type="image/svg+xml" alt="Поиск"></object></button>
-                        <input type="text" name="text" class="search" placeholder="Поиск:">
-                    </div>
-                    <div class="bookmark-div">
-                        <a class="bookmark" rel="sidebar" href="" onclick="return bookmark(this);">
+        <header class="header">
+            <nav class="main-navigation">
+                <div class="top-wrapper">
+                    <section class="top-area">
+                        <a class="main-header-logo" href=technomart.html>ТЕХНОМАРТ</a>
+                        <form>
+                            <button class="search"><object data="C:\Users\Max\barbershop/img/svg/icon-search.svg" width="17px" heigth="17px" class="icon-search"
+                            type="image/svg+xml" alt="Поиск"></object></button>
+                            <input type="text" name="text" class="search" placeholder="Поиск:"> 
+                        </form>
                         <object data="C:\Users\Max\barbershop/img/svg/icon-bookmark.svg" width="14px" heigth="16px" class="icon-bookmark"
-                        type="image/svg+xml"></object>Закладки</a>
-                    </div>
-                    <div class="cart-div">
-                        <a class="cart" href="#" title="Buy Shopping card">
+                        type="image/svg+xml"></object>
+                        <a class="bookmark" rel="sidebar" href="" onclick="return bookmark(this);">Закладки: 0</a>   
                         <object data="C:\Users\Max\barbershop/img/svg/icon-cart.svg" width="15px" heigth="15px" class="icon-cart"
-                        type="image/svg+xml"></object>Корзина</a>
-                    </div>
-                    <a class="button-green" href="makeorder.html">Оформить заказ</a>
-                </form>
-            </section>
-            <section class="middle-area">
-                <div class="cite-about">
-                    <p class="text-cite-about">Интернет-магазин<br>строительный материалов<br>и инструментов для ремонта<br></p>
+                        type="image/svg+xml"></object>
+                        <a class="cart" href="#" title="Buy Shopping card"> Корзина: 0</a>
+                        <a class="button-green" href="makeorder.html">Оформить заказ</a>
+                    </section>
                 </div>
-                <div class="phone-number">
-                    <a class="button" href="tel:+7 (812) 555-05-55">
-                        <object data="C:\Users\Max\barbershop/img/svg/icon-phone.svg" width="20px" heigth="20px" class="icon-phone"
-                        type="image/svg+xml"></object>+7 (812) 555-05-55
-                    </a>
-                    <p>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/18</p>
+                <div class="middle-wrapper">
+                    <section class="middle-area">
+                        <p class="text-cite-about">Интернет-магазин<br>строительный материалов<br>и инструментов для ремонта<br></p>
+                        <div>
+                            <a class="phone-number" href="tel:+7 (812) 555-05-55">
+                            <object data="C:\Users\Max\barbershop/img/svg/icon-phone.svg" width="20px" heigth="20px" class="icon-phone"
+                            type="image/svg+xml"></object>+7 (812) 555-05-55</a>
+                            <p class="address">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/18</p>
+                        </div>
+                        <form class="button-client">
+                            <a class="enter" href="#"><object data="C:\Users\Max\barbershop/img/svg/icon-login.svg" width="20px" heigth="17px" class="icon-login"
+                            type="image/svg+xml"></object>ВХОД</a>
+                            <a class="sign-in" href="#">Регистрация</a>
+                        </form>
+                    </section>
                 </div>
-                <div>
-                    <form class="button-client">
-                        <a class="button" href="#"><object data="C:\Users\Max\barbershop/img/svg/icon-login.svg" width="20px" heigth="17px" class="icon-login"
-                        type="image/svg+xml"></object>ВХОД</a>
-                        <a class="button" href="#">Регистрация</a>
-                    </form>
-                </div>
-            </section>
-            <ul class="site-navigation">
-                <li class="nav-1"><a href="info.html">Главная</a></li>
-                <li class="nav-2"><a href="company.html">Компания</a></li>
-                <li class="nav-3"><a href="catalog.html">Каталог</a></li>
-                <li class="nav-4"><a href="news.html">Новости</a></li>
-                <li class="nav-5"><a href="special-offer.html">Спецпредложения</a></li>
-                <li class="nav-6"><a href="delivery.html">Доставка</a></li>
-                <li class="nav-7"><a href="contacts.html">Контакты</a></li>
-            </ul>
+                <ul class="site-navigation">
+                    <li class="nav-1"><a href="info.html">Главная</a></li>
+                    <li class="nav-2"><a href="company.html">Компания</a></li>
+                    <li class="nav-3"><a href="catalog.html">Каталог</a></li>
+                    <li class="nav-4"><a href="news.html">Новости</a></li>
+                    <li class="nav-5"><a href="special-offer.html">Спецпредложения</a></li>
+                    <li class="nav-6"><a href="delivery.html">Доставка</a></li>
+                    <li class="nav-7"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
         </header>
         <main class="container">
             <section class="propositions">
