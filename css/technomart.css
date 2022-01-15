@@ -78,7 +78,7 @@ a {
 }
 .top-area form {
     margin-left: 16px;
-    margin-right: 90px;
+    margin-right: 102px;
 }
 .search {
     font: inherit;
@@ -166,6 +166,10 @@ a {
     opacity:0.3;
 }
 
+.middle-area .button-client {
+    width: 281px;
+}
+
 .button-client a {
     color: #000000;
 
@@ -173,14 +177,24 @@ a {
     font-size: 21px;
     line-height: 18px;
     text-align: center;
-
+    text-transform: none;
     background-color: #ffffff;
-    
-    margin: 0;
-    padding: 0;
 }
-.button-client .sign-in {
-    width: 150px;
+.button-client {
+    margin-bottom: 30px;
+    width: 281px;
+}
+
+.button-client .button-signin {
+    padding: 14px 25px 14px 25px;
+}
+
+.button-client .button-enter {
+    padding: 14px 27px 14px 9px;
+}
+
+.button-enter object {
+    padding-right: 10px;
 }
 
 .button-client a:hover {
@@ -197,7 +211,7 @@ a {
 
 .middle-wrapper {
     
-    width: 940px;
+    width: 980px;
     margin-top: 45px;
     margin-bottom: 45px;
 
@@ -212,7 +226,7 @@ a {
 }
    
 .middle-area .text-cite-about{
-    padding-left: 53px;
+    margin-left: 53px;
 }
 
 .text-cite-about{
@@ -225,7 +239,7 @@ a {
     margin-bottom: 5px;
 }
 
-.middle-area div {
+.middle-area .phone-adress {
     
     width: 270px;
     height: 68px;
