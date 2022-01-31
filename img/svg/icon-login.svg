@@ -27,12 +27,5 @@
                                                                                                     
                            
 <?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1 {
-        opacity: 0.3;
-      }
-    </style>
-  </defs>
-  <image id="icon-login" class="cls-1" width="20" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAMAAADqmnyMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAQlBMVEXDy9L////Dy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9LDy9IAAAAZqwBuAAAAFXRSTlMAAC4FTUsyMAECFkk2OAM6PT8GM0rMZtLQAAAAAWJLR0QV5dj5owAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+UMAxAbNMm8/iEAAABfSURBVBjTjdBZDoAgDARQsCO443b/syo0RTQNcT4IeWmgrTEpTTwIMa0jNgPfCQJeEK7nmx0wZsTEau/6BzEvCiKQIIqspCC2XUEcPyvzm5Ty+b3epzZRMftZ29J7nxfVKgQldFLNFAAAAABJRU5ErkJggg=="/>
+<image id="icon-login" width="20" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAMAAADqmnyMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEUAAAAyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwyQlwAAACYSTiQAAAAFnRSTlMAlwEQ+KUPnwOeBknzsroKv8nSFar0XmU87AAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfmAR8VBhqIBgMhAAAAYElEQVQY043QWQ6AIAwE0CqCu7jO/Y8qIkU0DXE+CHlpoC2RT1G6Q+FKpc1thLphBFpG6C5cewwRMQZ19Q9isgJiNoxIshgBsW4CYv9ZGd9UPp/f831KEyWzH7ktvfd5Atv5Dj0CR321AAAAAElFTkSuQmCC"/>
 </svg>

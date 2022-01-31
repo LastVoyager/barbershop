@@ -10,18 +10,20 @@
     <body>
         <header class="header">
             <nav class="main-navigation">
-                <section class="top-area">
-                    <a class="main-header-logo" href=technomart.html>ТЕХНОМАРТ</a>
-                    <form>
-                        <button class="search"><object data="C:\Users\Max\barbershop/img/svg/icon-search.svg" width="17px" heigth="17px" class="icon-search"
-                        type="image/svg+xml" alt="Поиск"></object></button>
-                        <input type="text" name="text" class="search" placeholder="Поиск:"> 
-                    </form>
-                    <a class="bookmark" rel="sidebar" href="" onclick="return bookmark(this);"><object data="C:\Users\Max\barbershop/img/svg/icon-bookmark.svg" width="14px" heigth="16px" class="icon-bookmark"
-                    type="image/svg+xml"></object>Закладки: 0</a> 
-                    <a class="cart" href="#" title="Buy Shopping card"><object data="C:\Users\Max\barbershop/img/svg/icon-cart.svg" width="15px" heigth="15px" class="icon-cart"
-                    type="image/svg+xml"></object>Корзина: 0</a>
-                    <a class="button-green" href="makeorder.html">Оформить заказ</a>
+                <div class="top-wrapper">
+                    <section class="top-area">
+                        <a class="main-header-logo" href=technomart.html>ТЕХНОМАРТ</a>
+                        <form>
+                            <button class="search"><object data="C:\Users\Max\barbershop/img/svg/icon-search.svg" width="17px" heigth="17px" class="icon-search"
+                            type="image/svg+xml" alt="Поиск"></object></button>
+                            <input type="text" name="text" class="search" placeholder="Поиск:"> 
+                        </form>
+                        <a class="bookmark" rel="sidebar" href="" onclick="return bookmark(this);"><object data="C:\Users\Max\barbershop/img/svg/icon-bookmark.svg" width="14px" heigth="16px" class="icon-bookmark"
+                        type="image/svg+xml"></object>Закладки: 0</a> 
+                        <a class="cart" href="#" title="Buy Shopping card"><object data="C:\Users\Max\barbershop/img/svg/icon-cart.svg" width="15px" heigth="15px" class="icon-cart"
+                        type="image/svg+xml"></object>Корзина: 0</a>
+                        <a class="button-green" href="makeorder.html">Оформить заказ</a>
+                </div>
                 </section>
                 <section class="middle-area">
                     <p class="text-cite-about">Интернет-магазин<br>строительный материалов<br>и инструментов для ремонта<br></p>
@@ -53,7 +55,7 @@
                 <ul class="list-propositions">
                     <li class="materials">
                         <h3>
-                            <span class="catalog-1">Материалы</span>
+                            <span>Материалы</span>
                         </h3>
                         <a class="button" href="items.html">НА ЛЮБОЙ ВКУС</a>
                     </li>
@@ -73,6 +75,29 @@
                             <a class="button" href="technics.html">для стройки</a>
                         </p>
                     </li>
+                    <li class="current-tool">
+                        <h1>
+                            <span class="tool-name">ПЕРФОРАТОРЫ</span>
+                        </h1>
+                        <P>настоящие мужские</P>
+                        <div class="sim-slider"> <!-- СЛАЙДЕР БЛЯДЬ -->
+                            <ul class="sim-slider-list">
+                                <li><img src="screen.gif" alt="screen"></li>    
+                                <li class="sim-slider-element"><img src="img1.jpg" alt="1"></li>
+                                <li class="sim-slider-element"><img src="img2.jpg" alt="2"></li>
+                             …
+                                <li class="sim-slider-element"><img src="imgN.jpg" alt="N"></li>
+                            </ul>
+                            <div class="sim-slider-arrow-left"><</div>
+                            <div class="sim-slider-arrow-right">></div>
+                            <div class="sim-slider-dots"></div>
+                        </div>  <!-- СЛАЙДЕР БЛЯДЬ -->      
+                        <p>
+                            <a class="button" href="tools.html">ОТКРЫТЬ КАТАЛОГ</a>
+                            <input type="radio" name="photo1">
+                            <input type="radio" name="photo1">
+                        </p>
+                    </li>
                     <li class="discounts">
                         <h3>
                             <span class="catalog-4">Скидки 50%</span>
@@ -89,84 +114,61 @@
                             <a class="button" href="delivery.html">БЕСПЛАТНО</a>
                         </p>
                     </li>
-                    <section class="current-tool">
-                        <div class="sim-slider"> <!-- СЛАЙДЕР БЛЯДЬ -->
-                            <ul class="sim-slider-list">
-                                <li><img src="screen.gif" alt="screen"></li>    
-                                <li class="sim-slider-element"><img src="img1.jpg" alt="1"></li>
-                                <li class="sim-slider-element"><img src="img2.jpg" alt="2"></li>
-                             …
-                                <li class="sim-slider-element"><img src="imgN.jpg" alt="N"></li>
-                            </ul>
-                            <div class="sim-slider-arrow-left"><</div>
-                            <div class="sim-slider-arrow-right">></div>
-                            <div class="sim-slider-dots"></div>
-                        </div>  <!-- СЛАЙДЕР БЛЯДЬ -->      
-                        <h1>
-                            <span class="tool-name">ПЕРФОРАТОРЫ</span>
-                        </h1>
-                        <P>настоящие мужские</P>
-                        <p>
-                            <a class="button" href="tools.html">ОТКРЫТЬ КАТАЛОГ</a>
-                            <input type="radio" name="photo1">
-                            <input type="radio" name="photo1">
-                        </p>
-                    </section>
                 </ul>
             </section>
             <section class="populars">
                 <div class="populars-goods">
-                    <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
-                    <form class="нахуя я здесь поставил форм?">
-                        <a class="button" href="#">все популярные товары</a>
-                    </form>
-                    <ul class="list-populars-goods">
-                        <li class="tool-1">
-                            <a href="drill-bosch-1.html"><img src="img/drill-bosch-1.jpg" width="" height="" 
-                                alt="drill-bosch-1"></a>
-                            <p catalog="item-price"><b></b>Перфоратор BOSCH<br>BFG 9000<br></b>
-                                <s>32500 p.</s><br>
-                            </p>
-                            <form>
-                                <button>25500 p.</button>
-                            </form>
-                        </li>
-                        <li class="tool-2">
-                            <a href="perforator-arny.html"><img src="img/perforator-arny.jpg" width="" height="" 
-                                alt="perforator ARNOLD"></a>
-                            <p catalog="item-price"><b></b>Перфоратор ARNOLD<br>T-1000<br></b>
-                               <s>500000 p.</s><br>
-                            </p>
-                            <form>
-                                <button>100 p.</button>
-                            </form>
-                            <p>
-                                <form class="button-buy">
-                                    <a class="button-green" href="#">КУПИТЬ</a>
-                                    <button class="button-green-empty">В ЗАКЛАДКИ</button>
-                                </form>
-                            </p>
-                        </li>
-                         <!--и так далее-->
-                    </ul>
+                    <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+                    <a class="red-button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
                 </div>
+                <ul class="list-populars-goods">
+                    <li class="tool-1">
+                        <a href="drill-bosch-1.html"><img src="img/drill-bosch-1.jpg" width="" height="" 
+                            alt="drill-bosch-1"></a>
+                        <p catalog="item-price"><b></b>Перфоратор BOSCH<br>BFG 9000<br></b>
+                            <s>32500 p.</s><br>
+                        </p>
+                        <form>
+                            <button>25500 p.</button>
+                        </form>
+                    </li>
+                    <li class="tool-2">
+                        <a href="perforator-arny.html"><img src="img/perforator-arny.jpg" width="" height="" 
+                            alt="perforator ARNOLD"></a>
+                        <p catalog="item-price"><b></b>Перфоратор ARNOLD<br>T-1000<br></b>
+                           <s>500000 p.</s><br>
+                        </p>
+                        <form>
+                            <button>100 p.</button>
+                        </form>
+                    </li>
+                    <li>
+                        <p>
+                            <form class="button-buy">
+                                <a class="button-green" href="#">КУПИТЬ</a>
+                                <button class="button-green-empty">В ЗАКЛАДКИ</button>
+                            </form>
+                        </p>
+                    </li>
+                     <!--и так далее-->
+                </ul>
                 <div class="popular-manufacturer">
-                    <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
+                    <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
                     <form class="нахуя я здесь поставил форм?">
-                        <a class="button" href="#">все популярные производители</a>
+                        <a class="red-button" href="#">все популярные производители</a>
                     </form>
-                    <ul class="list-popular-manufacturer">
-                        <li class="manufacturer-1">
-                            <a href="bosch-catalog.html"><img src="img/boschlogo.jpg" width="" height="" 
-                            alt="bosch"></a>
-                        </li>
-                        <li class="manufacturer-2">
-                            <a href="makita-catalog.html"><img src="img/makitalogo.jpg" width="" height="" 
-                            alt="makita"></a>
-                        </li>
-                        <!--и так далее-->
-                    </ul>
                 </div>
+                <ul class="list-popular-manufacturer">
+                    <li class="manufacturer-1">
+                        <a href="bosch-catalog.html"><img src="img/boschlogo.jpg" width="" height="" 
+                        alt="bosch"></a>
+                    </li>
+                    <li class="manufacturer-2">
+                        <a href="makita-catalog.html"><img src="img/makitalogo.jpg" width="" height="" 
+                        alt="makita"></a>
+                    </li>
+                    <!--и так далее-->
+                </ul>
             </section>
             <section clas="all-services">
                 <div clas="services">
