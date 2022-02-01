@@ -174,8 +174,6 @@ a {
     min-height: 42px;
     padding: 0px 0px 0px 0px;
     margin-left: 0px;
-    
-
 }
 
 .button-green:hover {
@@ -186,23 +184,45 @@ a {
     background-color:#518534;
 }
 
-.button-green-empty {
+.green-buy {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+    font: inherit;
+    color: #ffffff;
+    text-transform: none;
+    
+    background-color: #63a63e;
+    width: 150px;
+    min-height: 42px;
+
+    box-shadow: 0px 3px 0px 0px #367315; 
+    border-radius: 3px 3px 3px 3px;
+
+    padding: 0px;
+    margin: 45px 0px 7px 0px;
+}
+.button-bookmark {
     font: inherit;
 
     color: #32425c;
     text-align: center;
+    background-color: #ffffff;
     
-    border-color:  #63a63e;
+    border-color: #63a63e;
     width: 150px;
     height: 42px;
-    margin-left: 15px;
+    margin: 0px;
+
     border-style: solid; 
+    border-radius: 3px 3px 3px 3px;
 }
 
-.button-green-empty:hover {
+.button-bookmark:hover {
     border-color: #32425c;
 }
-.button-green-empty:active {
+.button-bookmark:active {
     border-color: #32425c;
     opacity:0.3;
 }
@@ -535,8 +555,51 @@ main h2 {
     justify-content:space-between;
 
     width: 940px;
-    
+    margin:0px;
+    padding-left: 0px;
 }
+
+.list-populars-goods li {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+    font: inherit;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    
+    border: 1px solid #eaeaea;
+    margin-top: 20px;
+}
+.item-name  {
+    margin: 0px;
+}
+
+.item-price {
+    font: PTSans;
+
+    color: #a9a9a9;
+    font-size: 17px;
+    line-height: 18px;
+    margin: 13px 0px 13px 0px;
+}
+
+.red-buy {
+    font: inherit;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    
+    background-color: #ff5357;
+
+    width: 141px;
+    min-height: 38px;
+    margin-bottom: 21px;
+}
+
+
 .popular-manufacturer {
     display: flex;
     flex-direction: row;
@@ -546,6 +609,7 @@ main h2 {
     background-color: #f9f5f0;
     width: 940px;
     min-height: 90px;
+    margin-top: 21px;
 }
 
 .list-popular-manufacturer {
@@ -554,7 +618,31 @@ main h2 {
     justify-content:space-evenly;
     
     width: 940px;
+    margin-top: 20px;
 }
+
+.cart-buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: transparent;
+    box-shadow: 0px 1px 30px 5px #a9a9a9; 
+
+    width: 218px;
+    min-height: 316px;
+    margin-top: 20px;
+}
+
+.cart-buy form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 218px;
+    min-height: 187px;
+}
+
 /* FOOTER */
 section.first-row {
     background: #3d546e;
