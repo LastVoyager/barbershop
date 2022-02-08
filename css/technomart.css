@@ -152,7 +152,7 @@ a {
     margin-right: 17px;
     padding-bottom: 5px;
 }
-    /* B U T T O N S */
+    /* some B U T T O N S */
 
 .button-green {
     display: flex;
@@ -180,57 +180,6 @@ a {
     background-color:#518534;
 }
 
-.green-buy {
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    
-    font: inherit;
-    color: #ffffff;
-    text-transform: none;
-    
-    background-color: #63a63e;
-    width: 150px;
-    min-height: 42px;
-
-    box-shadow: 0px 3px 0px 0px #367315; 
-    border-radius: 3px 3px 3px 3px;
-
-    padding: 0px;
-    margin: 45px 0px 7px 0px;
-}
-
-.green-buy:hover {
-    background-color:#5fbb2d;
-}
-
-.green-buy:active {
-    background-color:#518534;
-}
-
-.button-bookmark {
-    font: inherit;
-
-    color: #32425c;
-    text-align: center;
-    background-color: #ffffff;
-    
-    border-color: #63a63e;
-    width: 150px;
-    height: 42px;
-    margin: 0px;
-
-    border-style: solid; 
-    border-radius: 3px 3px 3px 3px;
-}
-
-.button-bookmark:hover {
-    border-color: #32425c;
-}
-.button-bookmark:active {
-    border-color: #32425c;
-    opacity:0.3;
-}
 
 .middle-area .button-client {
     width: 282px;
@@ -273,6 +222,7 @@ a {
 .button-enter object:hover {
     opacity:1;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .button-client a:hover {
@@ -284,23 +234,84 @@ a {
     color: #000000;
     opacity:0.3;
 }
-
 .red-button {
     display: flex;
-    align-items: center;
-    justify-content:center;
-
+    justify-content: center;
+    align-items:center;
+    
     font: inherit;
     color: #ffffff;
     font-size: 14px;
     line-height: 18px;
     
-
     background-color: #ff5357;
-    border-radius: 3px 3px 3px 3px;
+
     width: 253px;
     min-height: 38px;
     margin-right: 24px;
+
+    border: 0px;
+    border-radius: 3px 3px 3px 3px;
+
+}
+.red-button:hover {
+    background-color: #ca2c37;
+}
+.red-button:active {
+    background-color: #ba2732;
+}
+/* cart's green buttons */
+.green-buy {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+    font: inherit;
+    color: #ffffff;
+    text-transform: none;
+    
+    background-color: #63a63e;
+    width: 150px;
+    min-height: 42px;
+
+    box-shadow: 0px 3px 0px 0px #367315; 
+    border-radius: 3px 3px 3px 3px;
+
+    padding: 0px;
+    margin: 45px 0px 7px 0px;
+}
+
+.green-buy:hover {
+    background-color:#5fbb2d;
+}
+
+.green-buy:active {
+    background-color:#518534;
+}
+
+.button-bookmark {
+    font: inherit;
+
+    color: #32425c;
+    text-align: center;
+    background-color: #ffffff;
+    
+    border-color: #63a63e;
+    width: 150px;
+    height: 42px;
+    margin: 0px;
+    cursor: pointer;
+
+    border-style: solid; 
+    border-radius: 3px 3px 3px 3px;
+}
+
+.button-bookmark:hover {
+    border-color: #32425c;
+}
+.button-bookmark:active {
+    border-color: #32425c;
+    opacity:0.3;
 }
 /* further header */
 
@@ -413,6 +424,7 @@ a {
 }
 
 /* M A I N */
+/* P R O P O S I T I O N S */
 .container {
     width: 1200px;
    
@@ -453,24 +465,31 @@ a {
     font-size: 24px;
     line-height: 30px;
     padding-left: 23px;
-    margin: 26px 0px 15px 0px;
+    margin: 20px 0px 10px 0px;
 }
-
+.list-propositions p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 3px 3px 3px 3px;
+    opacity: 0.1;
+    margin: 0px;
+    width: 135px; 
+    height: 38px; 
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
 .list-propositions a {
+    
     font: inherit;
     text-transform: none;
-
-    margin-left: 25px;
-    padding: 12px 25px 14px 25px;
 
     color: #ffffff;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-
-    background-color: #000000;
-    border-radius: 3px 3px 3px 3px;
-    opacity: 0.1;
+    opacity: 1;
 } 
 
 .materials {
@@ -529,7 +548,7 @@ a {
     display: flex;
 }
 
-/* P O P U L A R S */
+/* P O P U L A R S tools */
 
 .populars h2 {
     font: inherit;
@@ -538,7 +557,6 @@ a {
     line-height: 30px;
 
     margin-left: 30px;
-
 }
 
 .populars {
@@ -630,7 +648,7 @@ a {
     border: 0px;
     border-radius: 3px 3px 3px 3px;
 }
-
+/* P O P U L A R S brands */
 .list-popular-manufacturer {
     display: flex;
     flex-wrap: wrap;
@@ -641,10 +659,10 @@ a {
     margin-top: 20px;
     padding-left: 0px;
 }
+
 .list-popular-manufacturer li {
     border: 1px solid #eaeaea;
     margin-top: 20px;
-
 }
 
 .cart-buy {
@@ -683,19 +701,23 @@ a {
 .serv-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
     width: 940px;
 }
 
 .serv-wrapper-2 {
     display: flex;
+    margin-top: 90px;
    
-    justify-content: space-around;
-    
-    min-height: 186px;
 }
+/* services's options */
+.list-services {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    min-height: 182px;
+    box-shadow: 6px 0 5px -2px #888;
+}
 .list-services li {
     background: #3d546e;
 
@@ -703,27 +725,45 @@ a {
     min-height: 60px;
     list-style-type: none;
 
-    margin-top: 2px;
-    box-shadow: 0px 2px 0px 0px #33445a; 
+    margin-top: 0px;
+    box-shadow: 0px 1px 0px 0px #293449; 
 }
-
+.list-services li:hover {
+    background-color: #293449;
+}
+.list-services li:active {
+    background-color: #ffffff;
+    color: #293449;
+    box-shadow: 0px 1px 0px 0px #ffffff; 
+}
 .list-services a {
+    display: flex;
+    align-items: center;
+
     font: inherit;
     font-size: 21px;
     line-height: 30px;
     color: #ffffff;
     
     padding-left: 20px;
-    padding-top: 20px;
-    
+    padding-top: 15px;
 }
-
+.list-services a:active {
+    color: #293449;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+   
+}
 .services h3 {
     font: inherit;
     color:#000000;
     font-size: 30px;
     line-height: 30px;
+    margin-top: 68px;
 }
+
 .services p {
     font: inherit;
     text-transform: none;
@@ -731,7 +771,9 @@ a {
     color:#000000;
     font-size: 16px;
     line-height: 23px;
+    margin: 0px;
 }
+
 .list-services {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -742,6 +784,8 @@ a {
     color:#3d546e;
     font-size: 30px;
     line-height: 30px;
+    padding-left: 80px;
+    margin: 0px;
 }
 .delivery-info p {
     font: inherit;
@@ -750,6 +794,68 @@ a {
     color:#000000;
     font-size: 16px;
     line-height: 23px;
+    padding-left: 80px;
+    margin-top: 34px;
+}
+/* CONTACTS */
+.company-about {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 130px;
+    max-width: 940px;
+    min-height: 536px;
+    
+}
+.company-about h3 {
+    font: inherit;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 82px;
+}
+
+.company-about article {
+    font: inherit;
+    text-transform: none;
+    font-size: 15px;
+    line-height: 23px;
+    color: #000000; 
+}
+
+.info-wrapper {
+   
+    max-height: 536px;
+}
+.contacts-wrapper {
+   
+    max-height: 536px;
+}
+article ul {
+    margin: 28px 0px 40px 0px;
+    list-style-type: none;
+}
+
+article ul li {
+    font: inherit;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+article ul li::marker {
+    color: red; 
+    content:  "—";
+    position: relative;
+    left:     -5px;
+}
+
+iframe {
+    width: 300px;
+    height: 158px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 
