@@ -18,7 +18,7 @@
                             type="image/svg+xml" alt="Поиск"></object>
                             <input type="text" name="text" class="search" placeholder="Поиск:"> 
                         </form>
-                        <a class="bookmark" rel="sidebar" href="" onclick="return bookmark(this);"><object data="C:\Users\Max\barbershop/img/svg/icon-bookmark.svg" width="14px" heigth="16px" class="icon-bookmark"
+                        <a class="bookmark" rel="sidebar" href="" onclick="bookmark(this);"><object data="C:\Users\Max\barbershop/img/svg/icon-bookmark.svg" width="14px" heigth="16px" class="icon-bookmark"
                         type="image/svg+xml"></object>Закладки: 0</a> 
                         <a class="cart" href="#" title="Buy Shopping card"><object data="C:\Users\Max\barbershop/img/svg/icon-cart.svg" width="15px" heigth="15px" class="icon-cart"
                         type="image/svg+xml"></object>Корзина: 0</a>
@@ -34,9 +34,8 @@
                         <p class="address">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/18</p>
                     </div>
                     <form class="button-client">
-                        <button class="button-enter" href="#"><object data="C:\Users\Max\barbershop/img/svg/icon-login.svg" width="20px" heigth="17px" class="icon-login"
-                        type="image/svg+xml"></object>Войти</button>
-                        <button class="button-signin" href="#">Регистрация</button>
+                        <button class="button-enter" href="#">Войти</button>
+                        <!--<button class="button-signin" href="#">Регистрация</button>-->
                         </form>
                 </section>          
                 <ul class="site-navigation">
@@ -116,14 +115,30 @@
                     <a class="red-button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
                 </div>
                 <ul class="list-populars-goods">
-                    <li class="tool-1">
+                    <li class="tool">
                         <a href="drill-bosch-1.html"><img src="C:\Users\Max\barbershop\img\tool-1.jpg" width="218px" height="182px" 
                             alt="drill-bosch-1"></a>
                         <p class="item-name"><b>Перфоратор BOSCH<br>BFG 9000</br></b></p>
                         <p class="item-price"><s>32500 p.</s></p>
                         <button class="red-buy">25500 p.</button>
                     </li>
-                    <li class="tool-2">
+                    <li class="tool">
+                        <a href="perforator-arny.html"><img src="C:\Users\Max\barbershop\img\tool-2.jpg" width="" height="" 
+                            alt="perforator ARNOLD"></a>
+                        <p class="item-name"><b>Перфоратор ARNOLD<br>T-1000</br></b></p>
+                        <p class="item-price"><s>500000 p.</s></p>
+                        <form>
+                            <button class="red-buy">100 p.</button>
+                        </form>
+                    </li>
+                    <li class="tool">
+                        <a href="drill-bosch-1.html"><img src="C:\Users\Max\barbershop\img\tool-1.jpg" width="218px" height="182px" 
+                            alt="drill-bosch-1"></a>
+                        <p class="item-name"><b>Перфоратор BOSCH<br>BFG 9000</br></b></p>
+                        <p class="item-price"><s>32500 p.</s></p>
+                        <button class="red-buy">25500 p.</button>
+                    </li>
+                    <li class="tool">
                         <a href="perforator-arny.html"><img src="C:\Users\Max\barbershop\img\tool-2.jpg" width="" height="" 
                             alt="perforator ARNOLD"></a>
                         <p class="item-name"><b>Перфоратор ARNOLD<br>T-1000</br></b></p>
@@ -215,17 +230,11 @@
                         <p>Настоящий мужской шопинг начинается здесь. Огромный выбор товаров для ремонта и<br>
                         строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
                         <p>Мы можем доставить ваш товар в самые отдаленные точки планеты!<br>
-                        Техномарт работает со многими транспортными компаниями</p>
-                        <ul class="del.company-list">
-                           <li>
-                                <p>Деловые линии</p>
-                           </li>
-                           <li>
-                                <p>Автотрейдинг</p>
-                            </li>
-                            <li>
-                                <p>Хуйтранс</p>
-                           </li>
+                        Техномарт работает со многими транспортными компаниями:</p>
+                        <ul class="company-list">
+                            <li ><p class="first">Деловые линии</p></li>
+                            <li><p class="first">Автотрейдинг</p></li>
+                            <li><p class="first">Хуйтранс</p></li>
                         </ul>
                         <form>
                             <button class="red-button1">ПОДРОБНЕЕ О КОМПАНИИ</button>
@@ -285,5 +294,30 @@
                 </div>
             </section>
         </footer>
+
+        <section class="modal modal-login">
+            <h2>Личный кабинет</h2>
+            <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <p class="login-help">
+                <label class="login-checkbox">
+                  <input type="checkbox" name="remember" class="visually-hidden">
+                  <span class="checkbox-indicator"></span>
+                  Запомните меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+              </p>
+              <button class="button" type="submit">Войти</button>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+          </section>
     </body>
 <html lang="ru-ua"> 
