@@ -207,6 +207,11 @@ object {
 .button-green:active {
     background-color:#518534;
 }
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 280px;
+}
 
 .button-client {
     display: flex;
@@ -214,11 +219,12 @@ object {
 
     background-color: #ffffff;
     margin-bottom: 0px;
-    margin-right: 0px;
+    margin-left: 40px;
     width: 130px;
     margin: 0px 0px 30px 0px;
     min-height: 45px;
 }
+
 .button-client button {
    
     font: inherit;
@@ -230,7 +236,17 @@ object {
     border-style: none;
     cursor: pointer;
 }
+.button-client- button {
+   
+    font: inherit;
+    font-size: 21px;
+    line-height: 18px;
+    background-color: transparent;
+    text-transform: none;
 
+    border-style: none;
+    cursor: pointer;
+}
 .button-signin {
     width: 150px;
     padding: 0px 0px 0px 0px; 
@@ -241,7 +257,7 @@ object {
     color: #000000;
 
     width: 120px;
-    padding: 0px 0px 0px 25px;
+    padding: 0px 0px 0px 20px;
 }
 .button-enter::before {
     position: absolute;
@@ -544,6 +560,7 @@ object {
 }
 
 .list-propositions li {
+    position: relative;
     flex-basis: 300px;
     min-height: 123px;
 }
@@ -557,22 +574,20 @@ object {
     line-height: 30px;
     padding-left: 23px;
     margin: 20px 0px 10px 0px;
+
 }
-.list-propositions p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000000;
-    border-radius: 3px 3px 3px 3px;
-    opacity: 0.1;
-    margin: 0px;
-    width: 135px; 
-    height: 38px; 
-    margin-left: 25px;
-    margin-bottom: 0px;
+
+.list-propositions .materials, 
+.list-propositions .tools, 
+.list-propositions .technics, 
+.list-propositions .discounts,
+.list-propositions .delivery {
+    z-index: 1;
 }
-.list-propositions a {
-    
+
+
+.list-button {
+    position: absolute;
     font: inherit;
     text-transform: none;
     font-weight: 10;
@@ -580,9 +595,165 @@ object {
     color: #ffffff;
     font-size: 14px;
     line-height: 18px;
-    text-align: center;
-    opacity: 1;
+  
+    left: 45px;
+    top: 72px;
 } 
+.list-button::after {
+    position: absolute;
+    content: "";
+    background-color: #000000;
+    border-radius: 3px 3px 3px 3px;
+  
+    width: 135px; 
+    height: 38px; 
+ 
+    margin-left: -110px;
+    margin-top: -10px;
+    z-index: -1;
+    opacity: 0.1;
+}
+.list-button:hover::after {
+    opacity: 0.15;
+}
+.list-button:active::after {
+    opacity: 0.2;
+}
+
+.list-button-2 {
+    position: absolute;
+    font: inherit;
+    text-transform: none;
+    font-weight: 10;
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+  
+    left: 52px;
+    top: 72px;
+} 
+.list-button-2::after {
+    position: absolute;
+    content: "";
+    background-color: #000000;
+    border-radius: 3px 3px 3px 3px;
+  
+    width: 135px; 
+    height: 38px; 
+ 
+    margin-left: -110px;
+    margin-top: -10px;
+    z-index: -1;
+    opacity: 0.1;
+}
+.list-button-2:hover::after {
+    opacity: 0.15;
+}
+.list-button-2:active::after {
+    opacity: 0.2;
+}
+
+.list-button-3 {
+    position: absolute;
+    font: inherit;
+    text-transform: none;
+    font-weight: 10;
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+  
+    left: 52px;
+    top: 72px;
+} 
+.list-button-3::after {
+    position: absolute;
+    content: "";
+    background-color: #000000;
+    border-radius: 3px 3px 3px 3px;
+  
+    width: 135px; 
+    height: 38px; 
+ 
+    margin-left: -105px;
+    margin-top: -10px;
+    z-index: -1;
+    opacity: 0.1;
+}
+.list-button-3:hover::after {
+    opacity: 0.15;
+}
+.list-button-3:active::after {
+    opacity: 0.2;
+}
+
+.list-button-4 {
+    position: absolute;
+    font: inherit;
+    text-transform: none;
+    font-weight: 10;
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+  
+    left: 46px;
+    top: 72px;
+} 
+.list-button-4::after {
+    position: absolute;
+    content: "";
+    background-color: #000000;
+    border-radius: 3px 3px 3px 3px;
+  
+    width: 135px; 
+    height: 38px; 
+ 
+    margin-left: -113px;
+    margin-top: -10px;
+    z-index: -1;
+    opacity: 0.1;
+}
+.list-button-4:hover::after {
+    opacity: 0.15;
+}
+.list-button-4:active::after {
+    opacity: 0.2;
+}
+.list-button-5 {
+    position: absolute;
+    font: inherit;
+    text-transform: none;
+    font-weight: 10;
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+  
+    left: 58px;
+    top: 72px;
+} 
+.list-button-5::after {
+    position: absolute;
+    content: "";
+    background-color: #000000;
+    border-radius: 3px 3px 3px 3px;
+  
+    width: 135px; 
+    height: 38px; 
+ 
+    margin-left: -98px;
+    margin-top: -10px;
+    z-index: -1;
+    opacity: 0.1;
+}
+.list-button-5:hover::after {
+    opacity: 0.15;
+}
+.list-button-5:active::after {
+    opacity: 0.2;
+}
 
 .materials {
     order:0;
