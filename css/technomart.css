@@ -56,20 +56,20 @@ object {
     justify-content:center;
     background: #293449; 
     
-    height: 42px;
+    min-height: 42px;
     width: 1200px;
 }
 .top-area {
     display: flex;
     flex-direction: row;
-    justify-content:stretch;
+    justify-content:space-between;
 
     font: inherit;
     font-size: 17px;
     line-height: 18px;
     
     background: #293449; 
-    height: 42px;
+    min-height: 42px;
     width: 940px;
 
     margin: 0;
@@ -107,7 +107,7 @@ object {
     align-items: center;
     justify-content:center;
 
-    padding-left: 18px;
+    padding-left: 35px;
     padding-right: 65px;
 }
 .search {
@@ -172,7 +172,7 @@ object {
 .cart {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:stretch;
 
     font: inherit;
     color: #ffffff;
@@ -378,12 +378,12 @@ object {
     
     background-color: #63a63e;
     width: 150px;
-    min-height: 42px;
+    min-height: 38px;
 
     box-shadow: 0px 3px 0px 0px #367315; 
     border-radius: 3px 3px 3px 3px;
 
-    padding: 0px;
+    padding: 4px 0px 0px 0px;
     margin: 45px 0px 7px 0px;
 }
 
@@ -932,7 +932,7 @@ object {
 }
 
 .list-populars-goods {
-    position: relative;
+  
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -943,6 +943,8 @@ object {
 }
 
 .tool {
+    position: relative;
+
     display:flex;
     flex-direction: column;
     align-items:center;
@@ -957,12 +959,28 @@ object {
     
     border: 1px solid #eaeaea;
     margin-top: 20px;
+    z-index: 1;
+}
+.cart-buy {
+    position: absolute;
+    visibility: visible;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: transparent;
+
+    width: 219px;
+    min-height: 331px;
+    margin-top: 0px;
+
+    z-index: -1;
 }
 
-.tool:hover {
-    
-    /*box-shadow: 0px 1px 30px 5px #a9a9a9;*/
-}
+.tool:hover .cart-buy {
+    z-index: +1;
+    box-shadow: 0px 1px 30px 5px #a9a9a9;
+} 
+
 
 .item-name  {
     margin: 0px;
@@ -994,19 +1012,6 @@ object {
 }
 
 /* pop up little */
-.cart-buy {
-    position: absolute;
-    visibility: visible;
-    flex-direction: column;
-    align-items: center;
-
-    background-color: transparent;
-    box-shadow: 0px 1px 30px 5px #a9a9a9; 
-
-    width: 219px;
-    min-height: 331px;
-    margin-top: 20px;
-}
 
 .cart-buy form {
     display: flex;
@@ -1068,7 +1073,6 @@ object {
     padding: 0px 0px 0px 0px;
 
     min-height: 182px;
-    /*box-shadow: 6px 0 5px -2px #888;*/
 }
 
 .list-services::after {
