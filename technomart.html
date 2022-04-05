@@ -165,7 +165,6 @@
                             </form>
                         </div>
                     </li>
-                   
                     <!--и так далее-->
                 </ul>
                 <div class="popular-manufacturer">
@@ -217,19 +216,31 @@
                     </div>
                     <div class="serv-wrapper-2">
                         <ul class="list-services">
-                            <li>
+                            <li class="button-delivery">
                                 <a class="button" href="delivery.html">Доставка</a>
                             </li>
-                            <li>
+                            <li class="button-guarantee">
                                 <a class="button" href="guarantee.html">Гарантия</a>
                             </li>
-                            <li>
+                            <li class="button-credit">
                                 <a class="button" href="credit.html">Кредит</a>
                             </li>
                         </ul>
                         <div class="delivery-info">
                             <h3>ДОСТАВКА</h3>
-                            <p>Мы с удовольствием доставим наш товар прямо<br> вам в рот совершенно бесплатно.<br> 
+                            <p>Мы с удовольствием доставим наш товар<br>прямо вам в рот совершенно бесплатно.<br> 
+                                Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж.
+                            </p>
+                        </div>
+                        <div class="guarantee-info">
+                            <h3>ГАРАНТИЯ</h3>
+                            <p>Мы с удовольствием доставим наш товар<br>прямо вам в рот совершенно бесплатно.<br> 
+                                Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж.
+                            </p>
+                        </div>
+                        <div class="credit-info">
+                            <h3>КРЕДИТ</h3>
+                            <p>Мы с удовольствием доставим наш товар<br>прямо вам в рот совершенно бесплатно.<br> 
                                 Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж.
                             </p>
                         </div>
@@ -309,27 +320,30 @@
         </footer>
 
         <section class="modal modal-login">
-            <h2>Личный кабинет</h2>
-            <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label class="visually-hidden" for="user-login">Логин</label>
-                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-              </p>
-              <p>
-                <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-              </p>
-              <p class="login-help">
+                <section class="Name">
+                    <label class="visually-hidden" for="user-login">Ваше имя</label>
+                    <p><input class="login-icon-user" id="user-login" type="Name" name="login" placeholder="Представьтесь, пожалуйста"> </p>
+                </section>
+                <section class="E-mail">
+                    <label class="visually-hidden" for="user-password">Ваш E-mail</label>
+                    <p><input class="login-icon-password" id="user-password" type="E-mail" name="password" placeholder="Для отправки ответа"></p>
+                </section>
+                <section class="text">
+                    <label class="visually-hidden" for="user-password">Текст письма:</label>
+                    <p><input class="login-icon-password" id="user-password" type="text" name="password" placeholder="В свободной форме"></p>
+                </section>
+              <!--<p class="login-help">
                 <label class="login-checkbox">
                   <input type="checkbox" name="remember" class="visually-hidden">
                   <span class="checkbox-indicator"></span>
                   Запомните меня
                 </label>
                 <a class="restore" href="#">Я забыл пароль!</a>
-              </p>
-              <button class="button" type="submit">Войти</button>
+              </p>-->
+             
             </form>
+            <form class="zalupa"><button class="button" type="submit">ОТПРАВИТЬ</button></form>
             <button class="modal-close" type="button">Закрыть</button>
           </section>
     </body>

@@ -1044,9 +1044,9 @@ object {
     display: flex;
     justify-content: center;
 
-    background-image: url(../img/serv-background.jpg);
+    background: #f3f7f8;
     width: 1200px;
-    min-height: 522px;
+    min-height: 546px;
     margin-top: 85px;
 }
 
@@ -1057,10 +1057,12 @@ object {
 }
 
 .serv-wrapper-2 {
+    position: relative;
+
     display: flex;
     margin-top: 90px;
-   
 }
+
 
 /* services's options */
 
@@ -1099,6 +1101,7 @@ object {
 .list-services li:hover {
     background-color: #293449;
 }
+
 .list-services li:active {
     background-color: #ffffff;
     color: #293449;
@@ -1122,8 +1125,53 @@ object {
 .services {
     display: flex;
     flex-direction: column;
-   
 }
+.delivery-info {
+    z-index: 1;
+}
+.delivery-info::after {
+    position: absolute;
+    content: "";
+    width: 468px;
+    height: 261px;
+    background-image: url(../img/delivery.png);
+
+    right: 0px;
+    bottom: -100px;
+}
+.guarantee-info {
+    position: absolute;
+    left: 240px;
+    z-index: -1;
+}
+.guarantee-info::after {
+    position: absolute;
+    content: "";
+    width: 468px;
+    height: 261px;
+    background-image: url(../img/guarantee.png);
+
+    right: -400px;
+    bottom: -100px;
+}
+.credit-info {
+    position: absolute;
+    left: 240px;
+    z-index: -2;
+}
+.credit-info::after {
+    position: absolute;
+    content: "";
+    width: 468px;
+    height: 261px;
+    background-image: url(../img/credit.png);
+
+    right: -400px;
+    bottom: -100px;
+}
+
+
+
 .services h3 {
     font: inherit;
     color:#000000;
@@ -1142,6 +1190,8 @@ object {
     margin: 0px;
 }
 
+.guarantee-info h3,
+.credit-info h3,
 .delivery-info h3 {
     font: inherit;
     color:#3d546e;
@@ -1150,6 +1200,8 @@ object {
     padding-left: 80px;
     margin: 0px;
 }
+.guarantee-info p,
+.credit-info p,
 .delivery-info p {
     font: inherit;
     text-transform: none;
@@ -1447,29 +1499,31 @@ iframe {
 
 .modal {
     position: fixed;
-    
+    background-color: #ffffff;
     color: #000000;
-  
-    background-color: #f8f3f0;
+    border-top: 7px solid  #ff5357;
+    box-shadow: 0 17px 40px rgba(0, 0, 0, 8);
    
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    z-index: 1;
   }
   
   .modal-login {
     top: 120px;
     left: 50%;
     
-    display: none;
-  
-    width: 300px;
+display: none;
+
+    width: 620px;
+    max-height: 423px;
     margin-left: -230px;
-    padding: 50px 80px;
+    padding: 0px;
+    
   }
   
   .modal-close {
     position: absolute;
     top: 0;
-    right: -34px;
+    right: 10px;
     
     width: 22px;
     height: 22px;
@@ -1487,13 +1541,13 @@ iframe {
     content: "";
   
     position: absolute;
-    top: 10px;
-    left: 2px;
+    top: 19px;
+    left: -3px;
   
-    width: 19px;
-    height: 3px;
-  
-    background-color: #d0d0d0;
+    width: 30px;
+    height: 4px;
+   
+    background-color: #ee3643;
   }
   
   .modal-close::before {
@@ -1504,44 +1558,98 @@ iframe {
     transform: rotate(-45deg);
   }
   
-  .modal-login h2 {
-    margin: 0;
-    margin-bottom: 20px;
   
-    font-size: 30px;
-    line-height: 42px;
+  .login-form  {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
   }
-  
-  .modal-description {
-    margin: 0;
-    margin-bottom: 10px;
+
+  .Name {
+      margin-top: 50px;
+      margin-left: 80px;
   }
-  
+  .E-mail {
+    margin-top: 50px;
+   margin-left: 21px;
+}
+.text {
+    margin-top: 22px;
+    margin-left: 80px;
+}
   .login-form p {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  
-  .login-form input[type="text"],
-  .login-form input[type="password"] {
+   margin: 0px;
+   }
+   .login-form label {
+    font-family: "Cuprum", Regular;
+    color:black;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+   }
+  .login-form input[type="Name"],
+  .login-form input[type="E-mail"] {
     box-sizing: border-box;
-    width: 300px;
-    padding: 10px 15px;
-    padding-right: 40px;
+    width: 220px;
+    
+    padding-left: 12px;
+    
+    font: inherit;
+    color: #dee3e4;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: none;
+    
+    background-color: #ffffff;
+    border: 2px solid #dee3e4;
+    border-radius: 4px 4px 4px 4px;
+  }
+  .login-form input[type="text"] {
+   
+    box-sizing: border-box;
+    width: 460px;
+    min-height: 114px;
+    padding-bottom: 100px;
+    padding-left: 12px;
     
     font: inherit;
     color: #000000;
-    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: none;
     
-    background-color: #f9f6f3;
-    border: 2px solid #000000;
+    background-color: #ffffff;
+    border: 2px solid #dee3e4;
+    border-radius: 4px 4px 4px 4px;
   }
-  
-  .login-form input:focus {
-    border-color: #663d15;
+  .zalupa {
+      background-color: #f4f4f4;
+      padding: 37px;
+      margin-top: 37px;
   }
-  
-  .login-form .login-help {
+  .zalupa button {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    font: inherit;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    
+    background-color: #ff5357;
+
+    width: 460px;
+    min-height: 38px;
+    margin: auto;
+    margin-top: 0px;
+
+    border: 0px;
+    border-radius: 3px 3px 3px 3px;
+
+}
+
+/*.login-form .login-help {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1620,9 +1728,4 @@ iframe {
   .restore:hover,
   .restore:focus {
     text-decoration: none;
-  }
-  
-  .login-form .button {
-    width: 100%;
-    margin-right: 0;
-  }
+  }*/
