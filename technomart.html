@@ -347,4 +347,19 @@
             <button class="modal-close" type="button">Закрыть</button>
           </section>
     </body>
+    <script>
+        var sent = document.querySelector(".red-button2");
+        var open = document.querySelector(".modal-login");
+        var close = document.querySelector(".modal-close");
+
+        sent.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        open.classList.add("modal-show");
+        });
+        
+        close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        open.classList.remove("modal-show");
+        });
+    </script>
 <html lang="ru-ua"> 

@@ -107,8 +107,8 @@ object {
     align-items: center;
     justify-content:center;
 
-    padding-left: 35px;
-    padding-right: 65px;
+    padding-left: 15px;
+    padding-right: 30px;
 }
 .search {
     font: inherit;
@@ -117,6 +117,24 @@ object {
     background-color: #293449;
     border: 0px solid;
     width: auto;
+}
+.top-area input {
+    box-sizing: border-box;
+    width: 200px;
+    min-height: auto;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    
+    font: inherit;
+    color: #000000;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: none;
+    margin-left: 10px;
+    background-color: #293449;
+    border: none;
+
+    margin: 0px 0px 0px 10px;
 }
 
 .top-area form:hover {
@@ -332,7 +350,7 @@ object {
 
     border: 0px;
     border-radius: 3px 3px 3px 3px;
-
+    cursor: pointer;
 }
 .red-button1:hover {
     background-color: #ca2c37;
@@ -358,7 +376,7 @@ object {
 
     border: 0px;
     border-radius: 3px 3px 3px 3px;
-
+    cursor: pointer;
 }
 .red-button2:hover {
     background-color: #ca2c37;
@@ -1511,14 +1529,17 @@ iframe {
     top: 120px;
     left: 50%;
     
-display: none;
+    display: none;
 
     width: 620px;
     max-height: 423px;
     margin-left: -230px;
     padding: 0px;
-    
   }
+  .modal-show {
+    display: block;
+  }
+  
   
   .modal-close {
     position: absolute;
