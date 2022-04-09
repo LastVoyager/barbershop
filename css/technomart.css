@@ -1230,6 +1230,20 @@ object {
     padding-left: 80px;
     margin-top: 34px;
 }
+.guarantee-showe {
+    z-index: 1;
+}
+.delivery-showe {
+    z-index: 1;
+}
+.delivery-close {
+    z-index: -1;
+}
+.credit-showe {
+    z-index: 1;
+}
+
+
 /* COMPANY ABOUT */
 
 .company-about {

@@ -217,13 +217,13 @@
                     <div class="serv-wrapper-2">
                         <ul class="list-services">
                             <li class="button-delivery">
-                                <a class="button" href="delivery.html">Доставка</a>
+                                <a class="button" href="#">Доставка</a>
                             </li>
                             <li class="button-guarantee">
-                                <a class="button" href="guarantee.html">Гарантия</a>
+                                <a class="button" href="#">Гарантия</a>
                             </li>
                             <li class="button-credit">
-                                <a class="button" href="credit.html">Кредит</a>
+                                <a class="button" href="#">Кредит</a>
                             </li>
                         </ul>
                         <div class="delivery-info">
@@ -351,6 +351,35 @@
         var sent = document.querySelector(".red-button2");
         var open = document.querySelector(".modal-login");
         var close = document.querySelector(".modal-close");
+        var guarantee = document.querySelector(".button-guarantee");
+        var delivery = document.querySelector(".button-delivery");
+        var credit = document.querySelector(".button-credit");
+        var guaranteeshowe = document.querySelector(".guarantee-info");
+        var deliveryclose = document.querySelector(".delivery-info");
+        var deliveryshowe = document.querySelector(".delivery-info");
+        var creditshowe = document.querySelector(".credit-info");
+        
+        credit.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        creditshowe.classList.add("credit-showe");
+        guaranteeshowe.classList.remove("guarantee-showe")
+        deliveryclose.classList.add("delivery-close");
+        });
+
+        delivery.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        guaranteeshowe.classList.remove("guarantee-showe");
+        deliveryclose.classList.remove("delivery-close");
+        creditshowe.classList.remove("credit-showe")
+        });
+
+        guarantee.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        guaranteeshowe.classList.add("guarantee-showe");
+        deliveryclose.classList.add("delivery-close");
+        creditshowe.classList.remove("credit-showe")
+        });
+
 
         sent.addEventListener("click", function (evt) {
         evt.preventDefault();
