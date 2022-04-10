@@ -14,9 +14,9 @@
                     <section class="top-area">
                         <a class="main-header-logo" href=technomart.html>ТЕХНОМАРТ</a>
                         <form>
-                            <object data="C:\Users\Max\barbershop/img/svg/icon-search.svg" width="17px" heigth="17px" class="icon-search"
-                            type="image/svg+xml" alt="Поиск"></object>
-                            <input type="text" name="text" class="search" placeholder="Поиск:"> 
+                            <!--<object data="C:\Users\Max\barbershop/img/svg/icon-search.svg" width="17px" heigth="17px" class="icon-search"
+                            type="image/svg+xml" alt="Поиск"></object>-->
+                            <input type="search" name="text" class="search" placeholder="Поиск:"> 
                         </form>
                         <a class="bookmark" rel="sidebar" href="" onclick="bookmark(this);"><object data="C:\Users\Max\barbershop/img/svg/icon-bookmark.svg" width="14px" heigth="16px" class="icon-bookmark"
                         type="image/svg+xml"></object>Закладки: 0</a> 
@@ -358,6 +358,7 @@
         var deliveryclose = document.querySelector(".delivery-info");
         var deliveryshowe = document.querySelector(".delivery-info");
         var creditshowe = document.querySelector(".credit-info");
+  
         
         credit.addEventListener("click", function (evt) {
         evt.preventDefault();
