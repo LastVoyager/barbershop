@@ -323,15 +323,15 @@
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <section class="Name">
                     <label class="visually-hidden" for="user-login">Ваше имя</label>
-                    <p><input class="login-icon-user" id="user-login" type="Name" name="login" placeholder="Представьтесь, пожалуйста"> </p>
+                    <p><input class="login-user" id="user-login" type="Name" name="login" placeholder="Представьтесь, пожалуйста"> </p>
                 </section>
                 <section class="E-mail">
                     <label class="visually-hidden" for="user-password">Ваш E-mail</label>
-                    <p><input class="login-icon-password" id="user-password" type="E-mail" name="password" placeholder="Для отправки ответа"></p>
+                    <p><input class="password-user" id="user-password" type="E-mail" name="password" placeholder="Для отправки ответа"></p>
                 </section>
                 <section class="text">
                     <label class="visually-hidden" for="user-password">Текст письма:</label>
-                    <p><input class="login-icon-password" id="user-password" type="text" name="password" placeholder="В свободной форме"></p>
+                    <p><input class="text-user" id="user-password" type="text" name="password" placeholder="В свободной форме"></p>
                 </section>
               <!--<p class="login-help">
                 <label class="login-checkbox">
@@ -358,8 +358,45 @@
         var deliveryclose = document.querySelector(".delivery-info");
         var deliveryshowe = document.querySelector(".delivery-info");
         var creditshowe = document.querySelector(".credit-info");
-  
+
+        var login = document.querySelector(".login-user");
+        var password = document.querySelector(".password-user");
+        var form = open.querySelector(".zalupa")
+
+        /*var storage = localStorage.getItem("login")*/
+       
+
+        sent.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        open.classList.add("modal-show");
+        login.focus();
+        /*if (storage) {
+            login.value = storage;
+        }*/
+        });
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                if ( open.classList.contains("modal-show")) {
+                    open.classList.remove("modal-show");
+                }
+            }
+        });
+
+        /*form.addEventListener("submit", function (evt) {
+            if (!login.value || !password.value) {
+            evt.preventDefault();
+            console.log("tralala");
+        } else {
+            localStorage.setItem("login", login.value);
+        }
+        });*/
         
+        close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        open.classList.remove("modal-show");
+        });
+
+
         credit.addEventListener("click", function (evt) {
         evt.preventDefault();
         creditshowe.classList.add("credit-showe");
@@ -381,15 +418,6 @@
         creditshowe.classList.remove("credit-showe")
         });
 
-
-        sent.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        open.classList.add("modal-show");
-        });
         
-        close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        open.classList.remove("modal-show");
-        });
     </script>
 <html lang="ru-ua"> 

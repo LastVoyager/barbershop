@@ -1127,20 +1127,17 @@ object {
 
     margin-top: 0px;
     box-shadow: 0px 1px 0px 0px #293449; 
-    transition:  color 9999999s
 }
 .list-services li:hover {
-    background-color: #293449;
-    
+    background-color: #293449;  
 }
 
 .list-services li:active {
     background-color: #ffffff;
     color: #293449;
     box-shadow: 0px 1px 0px 0px #ffffff; 
-   
-    transition:  color 0s 
 }
+
 .list-services a {
     display: flex;
     align-items: center;
@@ -1643,7 +1640,7 @@ iframe {
     padding-left: 12px;
     
     font: inherit;
-    color: #dee3e4;
+    color: black;
     font-size: 13px;
     line-height: 18px;
     text-transform: none;
@@ -1686,7 +1683,7 @@ iframe {
     line-height: 18px;
     
     background-color: #ff5357;
-
+    cursor: pointer;
     width: 460px;
     min-height: 38px;
     margin: auto;
@@ -1697,83 +1694,16 @@ iframe {
 
 }
 
-/*.login-form .login-help {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 15px 0;
-  }
-  
-  .login-icon-user {
-    background-image: url("img/user.svg");
-    background-position: 270px center;
-    background-repeat: no-repeat;
-  }
-  
-  .login-icon-password {
-    background-image: url("img/lock.svg");
-    background-position: 270px center;
-    background-repeat: no-repeat;
-  }
-  
-  .login-checkbox {
-    position: relative;
-  
-    padding-left: 30px;
-  
-    cursor: pointer;
-  }
-  
-  .login-checkbox:hover,
-  .login-checkbox:focus {
-    color: #663d15;
-  }
-  
-  .login-checkbox input[type="checkbox"] + .checkbox-indicator {
-    position: absolute;
-    top: 0;
-    left: 0;
-  
-    width: 17px;
-    height: 17px;
-  
-    border: 2px solid #000000;
-  }
-  
-  .login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
-    border-color: #663d15;
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-  }
-  
-  .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
-  .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-    content: "";
-  
-    position: absolute;
-    top: 8px;
-    left: 1px;
-  
-    width: 15px;
-    height: 2px;
-  
-    background-color: #000000;
-  }
-  
-  .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-    transform: rotate(45deg);
-  }
-  
-  .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-    transform: rotate(-45deg);
-  }
-  
-  .restore {
-    color: #000000;
-    text-decoration: underline;
-  }
-  
-  .restore:hover,
-  .restore:focus {
-    text-decoration: none;
-  }*/
+/* animation */
+
+@keyframes drop {
+    0% { transform: translateY(-2000px);}
+    70% { transform: translateY(100px);}
+    90% { transform: translateY(-30px);}
+    100% { transform: translateY(0px);}
+}
+.modal-show {
+    display: block;
+    animation-name: drop;
+    animation-duration: 0.8s;
+}
