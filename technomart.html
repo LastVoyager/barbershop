@@ -5,7 +5,7 @@
         <title>technomart</title>
         <link rel="stylesheet" href="css/technomart.css">
         <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:wght@700&display=swap" rel="stylesheet">  
-        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="css/normalize.css">
     </head>
     <body>
         <header class="header">
@@ -269,7 +269,7 @@
                     <article>
                         <h3>КОНТАКТЫ</h3>
                         <p>Вы можете забрать товар сами,<br>заехав в наш офис</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.8399091071087!2d30.780254615157574!3d50.51854549033778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d976f550c911%3A0x9b039ae5e1a9ceea!2sKyivska%20St%2C%20249%D0%91%2C%20Brovary%2C%20Kyivs&#39;ka%20oblast%2C%2007400!5e0!3m2!1sen!2sua!4v1636889164885!5m2!1sen!2sua" 
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.8399091071087!2d30.780254615157574!3d50.51854549033778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d976f550c911%3A0x9b039ae5e1a9ceea!2sKyivska%20St%2C%20249%D0%91%2C%20Brovary%2C%20Kyivs&#39;ka%20oblast%2C%2007400!5e0!3m2!1sen!2sua!4v1636889164885!5m2!1sen!2sua" 
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         <form>
                             <button class="red-button2">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
@@ -341,83 +341,17 @@
                 </label>
                 <a class="restore" href="#">Я забыл пароль!</a>
               </p>-->
-             
             </form>
             <form class="zalupa"><button class="button" type="submit">ОТПРАВИТЬ</button></form>
             <button class="modal-close" type="button">Закрыть</button>
           </section>
+          <section class="modal modal-map">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.8399091071087!2d30.780254615157574!3d50.51854549033778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d976f550c911%3A0x9b039ae5e1a9ceea!2sKyivska%20St%2C%20249%D0%91%2C%20Brovary%2C%20Kyivs&#39;ka%20oblast%2C%2007400!5e0!3m2!1sen!2sua!4v1636889164885!5m2!1sen!2sua" 
+                    width="1200" height="900" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <button class="map-close" type="button">Закрыть</button>
+          </section>
     </body>
-    <script>
-        var sent = document.querySelector(".red-button2");
-        var open = document.querySelector(".modal-login");
-        var close = document.querySelector(".modal-close");
-        var guarantee = document.querySelector(".button-guarantee");
-        var delivery = document.querySelector(".button-delivery");
-        var credit = document.querySelector(".button-credit");
-        var guaranteeshowe = document.querySelector(".guarantee-info");
-        var deliveryclose = document.querySelector(".delivery-info");
-        var deliveryshowe = document.querySelector(".delivery-info");
-        var creditshowe = document.querySelector(".credit-info");
-
-        var login = document.querySelector(".login-user");
-        var password = document.querySelector(".password-user");
-        var form = open.querySelector(".zalupa")
-
-        /*var storage = localStorage.getItem("login")*/
-       
-
-        sent.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        open.classList.add("modal-show");
-        login.focus();
-        /*if (storage) {
-            login.value = storage;
-        }*/
-        });
-        window.addEventListener("keydown", function (evt) {
-            if (evt.keyCode === 27) {
-                if ( open.classList.contains("modal-show")) {
-                    open.classList.remove("modal-show");
-                }
-            }
-        });
-
-        /*form.addEventListener("submit", function (evt) {
-            if (!login.value || !password.value) {
-            evt.preventDefault();
-            console.log("tralala");
-        } else {
-            localStorage.setItem("login", login.value);
-        }
-        });*/
-        
-        close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        open.classList.remove("modal-show");
-        });
-
-
-        credit.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        creditshowe.classList.add("credit-showe");
-        guaranteeshowe.classList.remove("guarantee-showe")
-        deliveryclose.classList.add("delivery-close");
-        });
-
-        delivery.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        guaranteeshowe.classList.remove("guarantee-showe");
-        deliveryclose.classList.remove("delivery-close");
-        creditshowe.classList.remove("credit-showe")
-        });
-
-        guarantee.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        guaranteeshowe.classList.add("guarantee-showe");
-        deliveryclose.classList.add("delivery-close");
-        creditshowe.classList.remove("credit-showe")
-        });
-
-        
-    </script>
+    <script src="js/script.js"></script>
 <html lang="ru-ua"> 
