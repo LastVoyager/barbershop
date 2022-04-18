@@ -1263,7 +1263,7 @@ object {
 .box {
     display: flex;
     justify-content:start;
-    min-width: 1080px;
+    min-width: 1060px;
 }
 
 .company-about h3 {
@@ -1288,7 +1288,7 @@ object {
 }
 .contacts-wrapper {
     max-height: 536px;
-    margin-left: 140px;
+    margin-left: 130px;
 }
 article ul {
     margin: 28px 0px 40px 0px;
