@@ -48,7 +48,7 @@ object {
     background: #f3f7f8;
    
     height: 320px;
-    width: 1200px;
+   
 }
 .top-wrapper {
     display: flex;
@@ -563,16 +563,13 @@ object {
 
 /* M A I N */
 /* P R O P O S I T I O N S */
-.container {
-    width: 1200px;
-   
-}
+
 .propositions {
     display: flex;
     justify-content: center;
    
     margin-top: 60px;
-    width: 1200px;
+    
 }
 
 .list-propositions {
@@ -1075,7 +1072,7 @@ object {
     justify-content: center;
 
     background: #f3f7f8;
-    width: 1200px;
+   
     min-height: 546px;
     margin-top: 85px;
 }
@@ -1258,12 +1255,17 @@ object {
 
 .company-about {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     margin-left: 130px;
-    max-width: 940px;
     min-height: 536px;
 }
+.box {
+    display: flex;
+    justify-content:start;
+    min-width: 1080px;
+}
+
 .company-about h3 {
     font: inherit;
     font-weight: normal;
@@ -1286,6 +1288,7 @@ object {
 }
 .contacts-wrapper {
     max-height: 536px;
+    margin-left: 140px;
 }
 article ul {
     margin: 28px 0px 40px 0px;
@@ -1338,7 +1341,7 @@ iframe {
     flex-direction: column;
     align-items: center;
 
-    width: 1200px;
+   
     background: #3d546e;
 }
 .main-header-logo2 {
@@ -1372,7 +1375,7 @@ iframe {
 .first-row {
     display: flex;
     flex-direction: column;
-    width: 940px;
+    width: auto;
     min-height: 193px;
     background: #3d546e;
     color:#f3f7f8;
@@ -1454,7 +1457,7 @@ iframe {
     display: flex;
     justify-content: center;
     max-height: 107px;
-    width: 1200px;
+    width: 100000px;
     background: #33445a;
     color:#f3f7f8;
     padding: 0; 
@@ -1464,7 +1467,7 @@ iframe {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 940px;
+    width: 940px;
 }
 .footer-social {
     margin: 0px 0px 0px 115px;
