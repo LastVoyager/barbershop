@@ -932,6 +932,7 @@ object {
     align-items: center;
     margin-top: 53px;
     min-height: 952px;
+    width: auto;
 }
 
 .populars-goods {
