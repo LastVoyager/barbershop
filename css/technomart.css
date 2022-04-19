@@ -179,11 +179,7 @@ object {
     margin-left: 0px;
     margin-right: 0px;
 }
-.icon-bookmark {
-    margin-right: 13px;
-    padding-bottom: 5px;
-}
-#icon-bookmark {
+.bookmark object{
     margin-right: 13px;
     padding-bottom: 5px;
 }
@@ -214,11 +210,8 @@ object {
     padding-right: 23px;
     padding-left: 23px;
 }
-.icon-cart {
-    margin-right: 17px;
-    padding-bottom: 5px;
-}
-#icon-cart {
+
+.cart object{
     margin-right: 17px;
     padding-bottom: 5px;
 }
@@ -1078,7 +1071,7 @@ object {
     justify-content: center;
 
     background: #f3f7f8;
-   
+    width: 100%;
     min-height: 546px;
     margin-top: 85px;
 }
@@ -1383,7 +1376,6 @@ iframe {
     flex-direction: column;
     width: auto;
     min-height: 193px;
-    background: #3d546e;
     color:#f3f7f8;
 }
 
@@ -1463,7 +1455,7 @@ iframe {
     display: flex;
     justify-content: center;
     max-height: 107px;
-    width: 100000px;
+    width: 100%;
     background: #33445a;
     color:#f3f7f8;
     padding: 0; 
@@ -1473,6 +1465,7 @@ iframe {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
     width: 940px;
 }
 .footer-social {
