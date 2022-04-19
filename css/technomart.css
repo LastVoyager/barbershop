@@ -179,7 +179,10 @@ object {
     margin-left: 0px;
     margin-right: 0px;
 }
-
+.icon-bookmark {
+    margin-right: 13px;
+    padding-bottom: 5px;
+}
 #icon-bookmark {
     margin-right: 13px;
     padding-bottom: 5px;
@@ -210,6 +213,10 @@ object {
     margin-left: 0px;
     padding-right: 23px;
     padding-left: 23px;
+}
+.icon-cart {
+    margin-right: 17px;
+    padding-bottom: 5px;
 }
 #icon-cart {
     margin-right: 17px;
