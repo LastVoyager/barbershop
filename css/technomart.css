@@ -180,6 +180,8 @@ object {
     margin-right: 0px;
 }
 .bookmark object{
+    width: 15px;
+    height: 15px;
     margin-right: 13px;
     padding-bottom: 5px;
 }
@@ -212,6 +214,8 @@ object {
 }
 
 .cart object{
+    width: 14px;
+    height: 16px;
     margin-right: 17px;
     padding-bottom: 5px;
 }
@@ -511,6 +515,8 @@ object {
     
 }
 .phone-number object {
+    width: 20px;
+    height: 20px;
     padding-right: 40px;
     
 }
