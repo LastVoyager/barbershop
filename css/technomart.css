@@ -7,11 +7,11 @@ body {
     color: #ffffff;
     text-transform: capitalize;
     
-    width: auto;
+    min-width: 940px;
     background-position: top center;
     background-repeat: no-repeat;
 
-    margin: 0;
+    margin: 0px auto;
     padding: 0;
 }
 
@@ -39,7 +39,9 @@ object {
 }
 
 /* HEADER */
-
+header {
+ 
+}
 .main-navigation {
     display: flex;
     flex-direction: column;
@@ -57,7 +59,7 @@ object {
     background: #293449; 
     
     min-height: 42px;
-    width: 1200px;
+    width: 100%;
 }
 .top-area {
     display: flex;
@@ -388,7 +390,7 @@ object {
 
     width: 300px;
     min-height: 38px;
-    margin-right: 24px;
+    margin-top: 0px;
 
     border: 0px;
     border-radius: 3px 3px 3px 3px;
@@ -1262,13 +1264,14 @@ object {
     display: flex;
     justify-content: center;
 
-    margin-left: 130px;
+    margin: auto;
     min-height: 536px;
+    width: auto;
 }
 .box {
     display: flex;
-    justify-content:start;
-    min-width: 1060px;
+   justify-content: start;
+   
 }
 
 .company-about h3 {
@@ -1290,10 +1293,12 @@ object {
 
 .info-wrapper {
     max-height: 536px;
+    margin: 0px;
 }
 .contacts-wrapper {
     max-height: 536px;
-    margin-left: 130px;
+    margin-left: 120px;
+    max-width: 300px;
 }
 article ul {
     margin: 28px 0px 40px 0px;
@@ -1380,14 +1385,14 @@ iframe {
 .first-row {
     display: flex;
     flex-direction: column;
-    width: auto;
+    min-width: 940px;
     min-height: 193px;
     color:#f3f7f8;
 }
 
 .footer-address {
    display: flex;
-   
+   justify-content: space-between;
 }
 
 .navigation-list-white {
@@ -1413,6 +1418,7 @@ iframe {
 .footer-nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 0px 0px 0px 0px;
 }
 .footer-nav .address {
